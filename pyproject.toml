@@ -7,7 +7,7 @@ readme = "README.md"
 keywords = ['python']
 requires-python = ">=3.8,<4.0"
 dependencies = [
-    "mkdocs-material>=9.5.36",
+    "nox>=2024.4.15",
 ]
 
 [project.urls]
@@ -24,7 +24,7 @@ dev-dependencies = [
     "ruff>=0.0.235",
     "mkdocs>=1.4.2",
     "mkdocstrings[python]>=0.19.0",
-    "nox>=2024.4.15",
+    "mkdocs-material>=9.5.36",
 ]
 
 [build-system]
