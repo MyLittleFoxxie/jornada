@@ -28,9 +28,6 @@ def tests(session):
         "pytest",
         "--doctest-modules",
         "tests",
-        "--cov",
-        "--cov-config=pyproject.toml",
-        "--cov-report=xml",
         external=True,
     )
 
