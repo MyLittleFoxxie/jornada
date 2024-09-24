@@ -62,13 +62,6 @@ To enable the code coverage reports, see [here](https://fpgmaas.github.io/cookie
 
 ## Releasing a new version
 
-- Create an API Token on [PyPI](https://pypi.org/).
-- Add the API Token to your projects secrets with the name `PYPI_TOKEN` by visiting [this page](https://github.com/MyLittleFoxxie/jornada/settings/secrets/actions/new).
-- Create a [new release](https://github.com/MyLittleFoxxie/jornada/releases/new) on Github.
-- Create a new tag in the form `*.*.*`.
-
-For more details, see [here](https://fpgmaas.github.io/cookiecutter-uv/features/cicd/#how-to-trigger-a-release).
-
 ---
 
 Repository initiated with [fpgmaas/cookiecutter-uv](https://github.com/fpgmaas/cookiecutter-uv).

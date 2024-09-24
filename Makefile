@@ -18,7 +18,7 @@ check: ## Run code quality tools.
 .PHONY: test
 test: ## Test the code with pytest
 	@echo "🚀 Testing code: Running pytest"
-	@uv run python -m pytest --cov --cov-config=pyproject.toml --cov-report=xml
+	@uv run python -m pytest --doctest-modules
 
 .PHONY: build
 build: clean-build ## Build wheel file
@@ -29,16 +29,6 @@ build: clean-build ## Build wheel file
 clean-build: ## Clean build artifacts
 	@echo "🚀 Removing build artifacts"
 	@uv run python -c "import shutil; import os; shutil.rmtree('dist') if os.path.exists('dist') else None"
-
-.PHONY: publish
-publish: ## Publish a release to PyPI.
-	@echo "🚀 Publishing: Dry run."
-	@uvx --from build pyproject-build --installer uv
-	@echo "🚀 Publishing."
-	@uvx twine upload --repository-url https://upload.pypi.org/legacy/ dist/*
-
-.PHONY: build-and-publish
-build-and-publish: build publish ## Build and publish.
 
 .PHONY: docs-test
 docs-test: ## Test if documentation can be built without warnings or errors
