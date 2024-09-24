@@ -6,7 +6,9 @@ authors = [{ name = "Vitor Raposo", email = "vitorraposo2@gmail.com" }]
 readme = "README.md"
 keywords = ['python']
 requires-python = ">=3.8,<4.0"
-dependencies = []
+dependencies = [
+    "mkdocs-material>=9.5.36",
+]
 
 [project.urls]
 Homepage = "https://MyLittleFoxxie.github.io/jornada/"
